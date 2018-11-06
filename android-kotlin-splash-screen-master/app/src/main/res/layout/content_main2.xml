@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Main2Activity"
+    tools:showIn="@layout/app_bar_main2">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="15"
+        android:hint="· ¿A dónde vas?"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColorLink="@color/common_google_signin_btn_text_dark_focused"
+        android:textCursorDrawable="@color/common_google_signin_btn_text_light_disabled" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="50dp"
+        app:backgroundTint="@color/colorAccent"
+        app:srcCompat="@drawable/baseline_home" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp"
+        android:text="Casa"
+        android:textSize="@dimen/activity_vertical_margin"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textColorLink="@color/common_google_signin_btn_text_dark_focused" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/bus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/common_google_signin_btn_text_dark_disabled"
+        app:backgroundTint="@color/colorAccent"
+        app:srcCompat="@drawable/baseline_directions_bus" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bus"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="-50dp"
+        android:text="Buses"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textColorLink="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="@dimen/activity_vertical_margin" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        app:backgroundTint="@color/colorAccent"
+        app:srcCompat="@drawable/baseline_work" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:text="Trabajo"
+        android:textSize="@dimen/activity_vertical_margin"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textColorLink="@color/common_google_signin_btn_text_dark_focused" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="200dp"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:elevation="0dp"
+        app:rippleColor="@color/common_google_signin_btn_text_light_disabled"
+        app:srcCompat="@drawable/baseline_games" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/geo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="120dp"
+        app:backgroundTint="@color/common_google_signin_btn_text_light_disabled"
+        app:elevation="0dp"
+        app:rippleColor="@color/common_google_signin_btn_text_light_disabled"
+        app:srcCompat="@drawable/baseline_my_location" />
+</RelativeLayout>
